@@ -1,4 +1,4 @@
-docker build -t proldogy/multi-client:latest -t proldogy/multi-client:$SHA -f ./cilent/Dockerfile ./client
+docker build -t proldogy/multi-client:latest -t proldogy/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t proldogy/multi-server:latest -t proldogy/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t proldogy/multi-worker:latest -t proldogy/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push proldogy/multi-client:latest
