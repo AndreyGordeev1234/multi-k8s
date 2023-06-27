@@ -16,7 +16,7 @@ before_install:
   - gcloud version
   - gcloud auth activate-service-account --key-file=service-account2.json
   - gcloud container clusters get-credentials multi-cluster --zone europe-central2-a --project multi-k8s-391009
-  - echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USERNAME --pasword-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --pasword-stdin
   - docker build -t proldogy/react-test -f ./client/Dockerfile.dev ./client
 
 script:
