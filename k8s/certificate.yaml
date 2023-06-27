@@ -4,7 +4,7 @@ metadata:
   name: andreigordeev-online
 spec:
   secretName: andreigordeev-online-tls
-  issuerRex:
+  issuerRef:
     name: letsencrypt-prod
   commonName: andreigordeev.online
   dnsNames:
