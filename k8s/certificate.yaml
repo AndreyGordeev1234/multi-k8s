@@ -8,4 +8,5 @@ spec:
     name: letsencrypt-prod
   commonName: andreigordeev.online
   dnsNames:
+    - andreigordeev.online
     - www.andreigordeev.online
